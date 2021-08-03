@@ -1,0 +1,12 @@
+name: Run Hello Action
+on:
+  - push
+  - workflow_dispatch
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    name: Hello
+    steps:
+      - name: Hello
+        uses: masa06033/javascript_action@v1.0.0
